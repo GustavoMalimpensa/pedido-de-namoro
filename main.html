@@ -80,9 +80,10 @@
 
         function moveButton() {
             var noBtn = document.getElementById('noBtn');
+            var margin = 50; // Margem desejada
             noBtn.style.position = 'absolute';
-            noBtn.style.left = Math.random() * window.innerWidth + 'px';
-            noBtn.style.top = Math.random() * window.innerHeight + 'px';
+            noBtn.style.left = margin + Math.random() * (window.innerWidth - 2 * margin) + 'px';
+            noBtn.style.top = margin + Math.random() * (window.innerHeight - 2 * margin) + 'px';
         }
 
         function closeWindow() {
